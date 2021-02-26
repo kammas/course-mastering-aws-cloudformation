@@ -25,9 +25,9 @@ aws cloudformation deploy \
 ## Create Support Profile
 ```
 [support]
-region = PASTE_REGION_HERE
-aws_access_key_id = PASTE_KEY_HERE
-aws_secret_access_key = PASTE_SECRET_HERE
+region = us-east-1
+aws_access_key_id = AKIA3WM6FHBRD4TJGZPV
+aws_secret_access_key = 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
 ```
 
 ## Deploy Template WITHOUT Service Role
@@ -45,7 +45,7 @@ aws cloudformation deploy \
 
 ## Deploy Template WITH Service Role
 ```bash
-ROLEARN=PASTE_SUPPORT_ROLE_ARN_HERE
+ROLEARN=arn:aws:iam::804027447394:role/service-roles-setup-CFStackRole-1DUY7XOMVZL5R
 PROFILE=cloudguru
 REGION=us-east-1
 STACKNAME=service-roles-with-role

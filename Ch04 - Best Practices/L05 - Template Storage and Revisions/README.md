@@ -3,7 +3,7 @@
 ```bash
 PROFILE=cloudguru
 REGION=us-east-1
-CourseBucketParam=acg-deploy-bucket
+CourseBucketParam=acg-deploy-bucket-pkammas
 STACKNAME=template-storage-setup
 aws cloudformation deploy \
   --stack-name $STACKNAME \

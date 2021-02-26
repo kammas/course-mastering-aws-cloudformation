@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TEMPLATE_LOCATION: ./Ch04 - Best Practices/L05 - Template Storage and Revisions
-      DEPLOY_BUCKET: acg-deploy-bucket
+      DEPLOY_BUCKET: acg-deploy-bucket-pkammas
       AWS_DEFAULT_REGION: us-east-1
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

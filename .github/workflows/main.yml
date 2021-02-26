@@ -13,7 +13,7 @@ jobs:
       run:
         shell: bash
     env:
-      DEPLOY_BUCKET: acg-deploy-bucket
+      DEPLOY_BUCKET: acg-deploy-bucket-pkammas
       AWS_DEFAULT_REGION: us-east-1
     steps:
       - name: Checkout Repo

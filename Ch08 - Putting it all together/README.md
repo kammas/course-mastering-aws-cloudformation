@@ -28,7 +28,7 @@ yarn deploy:backend \
   STAGE_FLAG=prod \
   REGION=us-east-1 \
   PROFILE=cloudguru \
-  DEPLOY_BUCKET=acg-deploy-bucket \
+  DEPLOY_BUCKET=acg-deploy-bucket-pkammas \
   GITHUB_USER=iDVB
 ```
 

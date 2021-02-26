@@ -3,7 +3,7 @@
 ```shell
 REGION=us-east-1
 PROFILE=cloudguru
-DEPLOY_BUCKET=acg-deploy-bucket
+DEPLOY_BUCKET=acg-deploy-bucket-pkammas
 aws cloudformation package \
   --template-file template.yaml \
   --s3-bucket $DEPLOY_BUCKET \

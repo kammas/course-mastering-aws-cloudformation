@@ -7,7 +7,7 @@
 
 # Deploy Base Template
 ```shell
-STACKNAME=acg-changeset
+STACKNAME=acg-changeset-pkammas
 REGION=us-east-1
 PROFILE=cloudguru
 aws cloudformation deploy \

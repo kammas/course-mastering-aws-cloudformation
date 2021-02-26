@@ -9,7 +9,7 @@
 ```shell
 PROFILE=cloudguru
 REGION=us-east-1
-CourseBucketParam=acg-deploy-bucket
+CourseBucketParam=acg-deploy-bucket-pkammas
 aws s3 sync \
   . s3://$CourseBucketParam/coursefiles/nestedstacks \
   --exclude "*" \

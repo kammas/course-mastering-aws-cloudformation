@@ -9,20 +9,20 @@
 6) [Create AWS SAR Application](#Create-AWS-SAR-Application)
 
 ### Create Stack Proxy Hosted Zone (HZ)
-Eg. `acg.danvanbrunt.com`
+Eg. `acg.pkammas.io`
 
 ### Point DNS at Hosted Zone Name Servers
-Eg. `acg.danvanbrunt.com` -> NSs of: `acg.danvanbrunt.com`
+Eg. `acg.pkammas.io` -> NSs of: `acg.pkammas.io`
 
 ### Create SSL Cert for Wildcard domain
-Eg. `*.acg.danvanbrunt.com`
+Eg. `*.acg.pkammas.io`
 
 ### Add SAR Policy to Deploy Bucket
 `./sar-bucket-policy.json`
 
 ### Package Template
 ```bash
-DEPLOY_BUCKET=acg-deploy-bucket
+DEPLOY_BUCKET=acg-deploy-bucket-pkammas
 REGION=us-east-1
 PROFILE=cloudguru
 yarn build
@@ -38,8 +38,8 @@ aws cloudformation package \
 ```bash
 SAR_VERSION="0.1.0"
 SAR_NAME="StackProxy"
-SAR_DESC="Serverless Proxy Environment"
-SAR_AUTHOR="Cloud Guru"
+SAR_DESC="ServerlessProxyEnvironment"
+SAR_AUTHOR="CloudGuru"
 aws serverlessrepo create-application \
   --author $SAR_AUTHOR \
   --description $SAR_DESC \
@@ -69,7 +69,7 @@ aws serverlessrepo create-application-version \
 APP_ID="arn:aws:serverlessrepo:us-east-1:645655324390:applications/StackProxy"
 SEMVER=0.1.0
 STACKNAME=stack-proxy
-DOMAIN=acg.danvanbrunt.com
+DOMAIN=acg.pkammas.io
 GITHUB_WEBHOOK_SECRET=2JGEJPgPBKMJKg
 SSLCERT_ARN="arn:aws:acm:us-east-1:645655324390:certificate/307ab9aa-4e54-4042-93b6-2c61c643e97e"
 REGION=us-east-1

@@ -16,10 +16,10 @@ Parameters:
     Default: arn:aws:acm:us-east-1:645655324390:certificate/0f3d1402-3d47-4233-b2ac-4a6f0020005e
   RCDomain:
     Type: String
-    Default: rc.acg.danvanbrunt.com
+    Default: rc.acg.pkammas.io
   ProdDomain:
     Type: String
-    Default: prod.acg.danvanbrunt.com
+    Default: prod.acg.pkammas.io
 
 Conditions:
   isProd: !Equals [!Ref StageFlag, prod]
